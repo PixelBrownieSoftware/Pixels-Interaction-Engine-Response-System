@@ -1,0 +1,20 @@
+.spriteBackground {
+    position: absolute;
+    background-color: #000000;
+    border-width: 3;
+    border-color: #444444;
+    width: 120;
+    height: 120;
+    border-radius: 10;
+}
+.borderBox{
+	border-width: 3px;
+	border-color: rgba(0, 0, 0,0.5);
+	-unity-text-align: middle-center;
+}
+.SubHead{
+	font-size: 18;
+}
+.Title{
+	font-size: 23;
+}

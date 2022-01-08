@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:VisualElement name ="Container">
+
+    <engine:VisualElement name ="LeftPanel">
+      <engine:Label text="Rules" class="Title"/>
+      <engine:Box>
+        <engine:ListView class="the-uxml-listview" name="rulesList"/>
+        <engine:VisualElement name ="Container">
+          <engine:Button text ="+Rule" name="addRuleButton" />
+        </engine:VisualElement>
+      </engine:Box>
+      <engine:Label text="Facts" class="Title"/>
+      <engine:Box>
+        <engine:ListView class="the-facts-listview" name="factsList"/>
+        <engine:VisualElement name ="Container">
+          <engine:TextField name="factName"  text="New fact" />
+          <engine:Button text ="+Fact" name="addFactButton" />
+        </engine:VisualElement>
+      </engine:Box>
+    </engine:VisualElement>
+
+    <engine:VisualElement name ="RightPanel">
+      <engine:VisualElement class="container">
+        <engine:VisualElement name="responseRules"/>
+      </engine:VisualElement>
+    </engine:VisualElement>
+
+  </engine:VisualElement>
+</engine:UXML>

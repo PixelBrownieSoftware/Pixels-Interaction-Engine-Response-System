@@ -1,0 +1,466 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5795301dbcbbf9f4b91211d2b54c96b3, type: 3}
+  m_Name: Rebecca
+  m_EditorClassIdentifier: 
+  rules:
+  - key: TestEvent
+    m_dialogue: This is a test.
+    m_ob_name: 
+    m_timer: 0.5
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: 
+    querySendFacts: []
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: test_ev1
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: hasTested
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: testP
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: hasTested
+        varType: 0
+        value_int: 1
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  - key: TestEvent2
+    m_dialogue: This is another test.
+    m_ob_name: 
+    m_timer: 0
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: 
+    querySendFacts: []
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: test_ev1
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: 
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: hasTested
+        varType: 0
+        value_int: 1
+        value_float: 0
+        value_string: 
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: hasTested
+        varType: 0
+        value_int: 2
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  - key: TestEventB
+    m_dialogue: I'm saying something else.
+    m_ob_name: 
+    m_timer: 1
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: 
+    querySendFacts: []
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: testEvB
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: test_ev
+    modifiers: []
+    value_int: 0
+  - key: TestEventA
+    m_dialogue: Here I go.
+    m_ob_name: 
+    m_timer: 0.5
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: '!self'
+    querySendFacts:
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: testEvB
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: test_ev
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: test_ev
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: testEvA
+    modifiers: []
+    value_int: 0
+  - key: LeemToyResponse
+    m_dialogue: I know right?
+    m_ob_name: 
+    m_timer: 0
+    priority: 1
+    eventTriggeredBy: 
+    triggersObject: '!self'
+    querySendFacts:
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: leemToyB
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onReply
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: leemToyA
+    modifiers: []
+    value_int: 0
+  - key: LeemToyResponseB
+    m_dialogue: I want it so bad!
+    m_ob_name: 
+    m_timer: 0
+    priority: 1
+    eventTriggeredBy: 
+    triggersObject: Ralph
+    querySendFacts:
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: leemToyB
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onReply
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: leemToyB
+    modifiers: []
+    value_int: 0
+  - key: SeePlant
+    m_dialogue: That's a pretty nice plant!
+    m_ob_name: 
+    m_timer: 0
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: 
+    querySendFacts: []
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onTalk
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: plant
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: seenPlant
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: seenPlant
+        varType: 0
+        value_int: 1
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  - key: GrinmanResponse
+    m_dialogue: '"Grinman was here"'
+    m_ob_name: 
+    m_timer: 0
+    priority: 1
+    eventTriggeredBy: 
+    triggersObject: '!self'
+    querySendFacts:
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: grinman2
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: grinmanA
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onReply
+    modifiers: []
+    value_int: 0
+  - key: GrinmanThink
+    m_dialogue: Who the heck is that?
+    m_ob_name: 
+    m_timer: 0
+    priority: 1
+    eventTriggeredBy: 
+    triggersObject: Ralph
+    querySendFacts:
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: grinman2
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onReply
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: grinman2
+    modifiers: []
+    value_int: 0
+  - key: WatchOnTV
+    m_dialogue: Hey, Ralph, what do you want to watch on TV?
+    m_ob_name: 
+    m_timer: 0
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: Ralph
+    querySendFacts:
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: tellyA
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: telly
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onTalk
+    modifiers: []
+    value_int: 0
+  - key: TVMovie
+    m_dialogue: Perhaps a movie?
+    m_ob_name: 
+    m_timer: 0
+    priority: 0
+    eventTriggeredBy: 
+    triggersObject: Ralph
+    querySendFacts:
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: onReply
+    - fact_name: prompt
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: tellyMovie
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: onReply
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: prompt
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: tellyB
+    modifiers: []
+    value_int: 0
+  facts:
+  - fact_name: hasTested
+    varType: 0
+    value_int: 0
+    value_float: 0
+    value_string: 
+  - fact_name: seenPlant
+    varType: 0
+    value_int: 0
+    value_float: 0
+    value_string: 

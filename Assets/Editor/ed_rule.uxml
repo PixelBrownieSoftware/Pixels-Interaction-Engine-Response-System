@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label text="Rule editor" class="Title"/>
+  <engine:TextField name="key" label="Key"></engine:TextField>
+  <engine:VisualElement class="container">
+    <engine:VisualElement class="Container">
+      
+      <engine:VisualElement class="borderBox">
+        <engine:Label text="Event" class="SubHead"/>
+        <engine:Box>
+          <engine:TextField name="dialogueText" label="Text"></engine:TextField>
+          <uie:FloatField name="dialogueTimer" label="Timer"></uie:FloatField>
+          <engine:TextField name="dialogueTriggerObj" label="Triggers object"></engine:TextField>
+          <uie:IntegerField name="dialoguePriority" label="Priority"></uie:IntegerField>
+        </engine:Box>
+      </engine:VisualElement>
+      
+      <engine:VisualElement class="borderBox">
+        <engine:Label text="Criteria" class="SubHead"/>
+        <engine:Box>
+          <engine:VisualElement name="responseCriteria"/>
+          <engine:Button text ="+ Criteria" name="addCriteriaButton" />
+        </engine:Box>
+      </engine:VisualElement>
+      
+      <engine:VisualElement class="borderBox">
+        <engine:Label text="Modifications" class="SubHead"/>
+        <engine:Box>
+          <engine:VisualElement name="responseModifications"/>
+          <engine:Button text ="+ Modifications" name="addModificationButton" />
+        </engine:Box>
+      </engine:VisualElement>
+      
+      <engine:VisualElement class="borderBox">
+        <engine:Label text="Follow-up query" class="SubHead"/>
+        <engine:Box>
+          <engine:VisualElement name="responseFollowupQuery"/>
+          <engine:Button text ="+ Query response" name="addFUQueryButton" />
+        </engine:Box>
+      </engine:VisualElement>
+    </engine:VisualElement>
+  </engine:VisualElement>
+  <engine:Label text="DANGER ZONE" class="SubHead"/>
+  <engine:Button text ="Delete" name="removeRuleButton" />
+</engine:UXML>

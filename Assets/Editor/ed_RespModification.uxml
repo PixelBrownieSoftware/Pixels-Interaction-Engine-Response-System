@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:VisualElement name="Container">
+    <uie:EnumField  name="criteriaType" include-obsolete-values="false"/>
+    <engine:TextField name="criteriaName"  text="Criteria" />
+    <uie:EnumField  name="modifyType" include-obsolete-values="false"/>
+    <uie:IntegerField name="criteriaFactInt"  text="Criteria" />
+    <engine:TextField name="criteriaFactStr"  text="Criteria" />
+    <uie:FloatField name="criteriaFactFloat"  text="Criteria" />
+
+
+    <engine:Button text ="-" name="removeModificationButton" />
+  </engine:VisualElement>
+</engine:UXML>

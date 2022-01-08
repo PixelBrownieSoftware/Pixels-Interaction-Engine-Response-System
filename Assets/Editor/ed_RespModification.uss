@@ -1,0 +1,33 @@
+Label {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+.removeCriteriaButton{
+	flex:0.5;
+	height: 50px;
+}
+#criteriaName{
+	width: 100px;
+}
+#criteriaType{
+	width: 70px;
+}
+#modifyType{
+	width: 70px;
+}
+#criteriaFactInt{
+	width: 100px;
+}
+#criteriaFactStr{
+	width: 100px;
+}
+#criteriaFactFloat{
+	width: 100px;
+}
+#Container{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: auto;
+	height: 25px;
+}

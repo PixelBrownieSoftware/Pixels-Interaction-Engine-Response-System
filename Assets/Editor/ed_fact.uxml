@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label text="Fact editor" class="Title"/>
+  <engine:TextField name="fName" label="Key"></engine:TextField>
+  <uie:EnumField  name="fType" include-obsolete-values="false"/>
+  <uie:IntegerField name="fInt"  text="Criteria" />
+  <engine:TextField name="fStr"  text="Criteria" />
+  <uie:FloatField name="fFloat"  text="Criteria" />
+  <engine:Label text="DANGER ZONE" class="SubHead"/>
+  <engine:Button text ="Delete" name="removeFactButton" />
+</engine:UXML>

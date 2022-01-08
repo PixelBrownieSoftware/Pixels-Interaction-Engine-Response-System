@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5795301dbcbbf9f4b91211d2b54c96b3, type: 3}
+  m_Name: TestDia
+  m_EditorClassIdentifier: 
+  rules:
+  - key: talkTes
+    m_dialogue: 
+    m_ob_name: 
+    eventTriggeredBy: on_talk
+    triggersObject: 
+    querySendFacts: []
+    conditions:
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: Happy
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: found
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: true
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: 
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+      changeType: 0
+    - m_ob_name: 
+      factToCheck:
+        fact_name: 
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  - key: greeting
+    m_dialogue: Hey guys!
+    m_ob_name: 
+    eventTriggeredBy: 
+    triggersObject: Hey guys!
+    querySendFacts:
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: 5gg
+    - fact_name: lol
+      varType: 0
+      value_int: 44
+      value_float: 0
+      value_string: 
+    conditions:
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: thing
+        varType: 0
+        value_int: 43
+        value_float: 0
+        value_string: 
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: number
+        varType: 1
+        value_int: 44
+        value_float: 66
+        value_string: 
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: 4gg
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: greetingNum
+        varType: 0
+        value_int: 0
+        value_float: 7
+        value_string: 
+      changeType: 3
+    value_int: 0
+  - key: List
+    m_dialogue: 
+    m_ob_name: 
+    eventTriggeredBy: 
+    triggersObject: 
+    querySendFacts:
+    - fact_name: 
+      varType: 0
+      value_int: 0
+      value_float: 0
+      value_string: 
+    conditions:
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: idontcate
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: ggrh
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: 
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+      changeType: 0
+    - m_ob_name: 
+      factToCheck:
+        fact_name: 
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  - key: SpamtonBigShot
+    m_dialogue: WHAT? WAS THAT A [BIG SHOT]??
+    m_ob_name: 
+    eventTriggeredBy: 
+    triggersObject: WHAT? WAS THAT A [BIG SHOT]??
+    querySendFacts:
+    - fact_name: concept
+      varType: 2
+      value_int: 0
+      value_float: 0
+      value_string: SpamtonBigShot
+    conditions:
+    - m_ob_name: 
+      objType: 2
+      condType: 0
+      factToCheck:
+        fact_name: concept
+        varType: 2
+        value_int: 0
+        value_float: 0
+        value_string: OnShoot
+    - m_ob_name: 
+      objType: 0
+      condType: 0
+      factToCheck:
+        fact_name: HadBigShot
+        varType: 0
+        value_int: 0
+        value_float: 0
+        value_string: 
+    modifiers:
+    - m_ob_name: 
+      factToCheck:
+        fact_name: HadBigShot
+        varType: 0
+        value_int: 1
+        value_float: 0
+        value_string: 
+      changeType: 0
+    value_int: 0
+  facts:
+  - fact_name: 
+    varType: 0
+    value_int: 0
+    value_float: 0
+    value_string: 
