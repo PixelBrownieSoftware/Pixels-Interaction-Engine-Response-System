@@ -1,6 +1,5 @@
 # Pixel's Interaction Engine Response System
- PIERS
-This is a dialogue system, heavily inspired by Valve's repsonse system (https://www.youtube.com/watch?v=tAbBID3N64A).
+PIERS is a dialogue system, heavily inspired by Valve's repsonse system (https://www.youtube.com/watch?v=tAbBID3N64A).
 
 ## How it works
 Each character in a scene has a 'dialogue speaker' and a collection of facts and rules. When an event (with some facts to establish context) is dispatched to a character, they check their database of rules and asses which ones fit the context and say it. Once the dialogue has been said, they may modify their own facts and or do a followup response to another character.
