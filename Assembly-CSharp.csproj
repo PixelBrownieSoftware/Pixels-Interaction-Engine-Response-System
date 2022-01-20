@@ -53,12 +53,14 @@
     <UnityVersion>2020.2.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\o_dialogueTrigger.cs" />
     <Compile Include="Assets\o_onClickable.cs" />
+    <Compile Include="Assets\o_dialogueTrigger.cs" />
+    <Compile Include="Assets\S_SpeechContextHandler.cs" />
+    <Compile Include="Assets\s_RespDatabase.cs" />
     <Compile Include="Assets\s_dialogueDB.cs" />
     <Compile Include="Assets\s_diaEntry.cs" />
-    <Compile Include="Assets\s_RespDatabase.cs" />
     <Compile Include="Assets\o_dialogueSpeaker.cs" />
+    <Compile Include="Assets\s_ResponseCondCheck.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

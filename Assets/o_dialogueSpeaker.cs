@@ -98,6 +98,7 @@ namespace MagnumFoundation3D
             private s_ruleEntry current_dialogue;
             public GameObject speechBubble;
             private TMPro.TextMeshProUGUI txt;
+            public Guid speechID;
 
             private void Start()
             {
@@ -235,6 +236,12 @@ namespace MagnumFoundation3D
                 }
                 else
                 {
+                    /*
+                    if (S_SpeechContextHandler.instance.SpeechContextExists(speechID)) {
+
+                        if (bestDialgoueRule.priority <= S_SpeechContextHandler.instance.GetSpeechContextPriority(speechID))
+                    }
+                    */
                     if (current_dialogue != null)
                     {
                         if (bestDialgoueRule.priority <= current_dialogue.priority)

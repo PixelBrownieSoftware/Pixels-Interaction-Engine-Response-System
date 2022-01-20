@@ -53,12 +53,13 @@
     <UnityVersion>2020.2.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\ed_RespFollowup.cs" />
-    <Compile Include="Assets\Editor\ed_ruleCriterion.cs" />
     <Compile Include="Assets\Editor\ed_RespModification.cs" />
-    <Compile Include="Assets\Editor\ed_rule.cs" />
+    <Compile Include="Assets\Editor\ed_ruleCriterion.cs" />
     <Compile Include="Assets\Editor\ed_RespDataObj.cs" />
     <Compile Include="Assets\Editor\ed_fact.cs" />
+    <Compile Include="Assets\Editor\ed_RespFollowup.cs" />
+    <Compile Include="Assets\Editor\ed_PIERS.cs" />
+    <Compile Include="Assets\Editor\ed_rule.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Editor\ed_RespFollowup.uss" />
