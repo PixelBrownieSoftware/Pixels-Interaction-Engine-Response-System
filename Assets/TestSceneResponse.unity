@@ -347,6 +347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: onTalk
   characterName: Rebecca
+  participantNames:
+  - Ralph
+  speechContextPrefab: {fileID: 92035999360597415, guid: 9a7ee29a30048da4fafe935280ba601a, type: 3}
   prompts:
   - fact_name: prompt
     varType: 2
@@ -542,6 +545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: onTalk
   characterName: Ralph
+  participantNames:
+  - Rebecca
+  speechContextPrefab: {fileID: 92035999360597415, guid: 9a7ee29a30048da4fafe935280ba601a, type: 3}
   prompts:
   - fact_name: prompt
     varType: 2
@@ -3348,6 +3354,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: onTalk
   characterName: Ralph
+  participantNames:
+  - Rebecca
+  speechContextPrefab: {fileID: 92035999360597415, guid: 9a7ee29a30048da4fafe935280ba601a, type: 3}
   prompts:
   - fact_name: prompt
     varType: 2
@@ -3380,50 +3389,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 75, y: 48}
   m_EdgeRadius: 0
---- !u!1 &753590221
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 753590222}
-  - component: {fileID: 753590223}
-  m_Layer: 0
-  m_Name: GUID
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &753590222
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753590221}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.435114, y: 57.181805, z: -69.536415}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &753590223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753590221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b6802eadfcadd445bb08bd08f36ed2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contexts: []
 --- !u!1 &854695765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,6 +3513,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: onTalk
   characterName: Rebecca
+  participantNames:
+  - Ralph
+  speechContextPrefab: {fileID: 92035999360597415, guid: 9a7ee29a30048da4fafe935280ba601a, type: 3}
   prompts:
   - fact_name: prompt
     varType: 2
@@ -3651,6 +3619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_responseSystem: {fileID: 11400000, guid: dbb68007c118ca04ca6e615e1da10bc2, type: 2}
+  speechContext: {fileID: 0}
   speechBubble: {fileID: 507562992}
 --- !u!1 &1126972121
 GameObject:
@@ -4241,6 +4210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_responseSystem: {fileID: 11400000, guid: 63dcf12890e357f458f28f659bad381b, type: 2}
+  speechContext: {fileID: 0}
   speechBubble: {fileID: 376521663}
 --- !u!212 &2023231693
 SpriteRenderer:

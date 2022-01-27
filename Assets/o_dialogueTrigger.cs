@@ -7,6 +7,9 @@ public class o_dialogueTrigger : MonoBehaviour
 {
     public string eventName;
     public string characterName;
+    public string[] participantNames;
+    //TODO: Use object pooler instead
+    public O_SpeechContext speechContextPrefab;
 
     BoxCollider2D bx;
 
@@ -31,7 +34,11 @@ public class o_dialogueTrigger : MonoBehaviour
                         ob.TryGetComponent(out o_dialogueSpeaker speaker);
                         if (speaker != null)
                         {
-                            speaker.SayDialogue(eventName, prompts);
+                            if (speaker.SayDialogue(eventName, prompts, false))
+                            {
+                                O_SpeechContext sCtx = Instantiate(speechContextPrefab);
+                                sCtx.AddParticipants(characterName, participantNames);
+                            }
                         }
                     }
                 }

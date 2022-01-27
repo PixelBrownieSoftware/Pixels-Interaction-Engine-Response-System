@@ -17,7 +17,7 @@ MonoBehaviour:
     m_dialogue: That look like quite a cute toy.
     m_ob_name: 
     m_timer: 0
-    priority: 0
+    priority: 1
     eventTriggeredBy: 
     triggersObject: Rebecca
     querySendFacts:
@@ -73,7 +73,7 @@ MonoBehaviour:
     m_dialogue: Yeah, we could perhaps buy it next time we go shopping.
     m_ob_name: 
     m_timer: 0
-    priority: 0
+    priority: 1
     eventTriggeredBy: 
     triggersObject: 
     querySendFacts: []

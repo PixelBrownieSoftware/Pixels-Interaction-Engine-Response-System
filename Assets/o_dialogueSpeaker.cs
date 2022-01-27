@@ -94,8 +94,9 @@ namespace MagnumFoundation3D
             private Dictionary<string, s_fact> m_facts = new Dictionary<string, s_fact>();
             [SerializeField]
             private s_RespDatabase m_responseSystem;
+            public O_SpeechContext speechContext;
 
-            private s_ruleEntry current_dialogue;
+            public s_ruleEntry current_dialogue { get; private set; }
             public GameObject speechBubble;
             private TMPro.TextMeshProUGUI txt;
             public Guid speechID;
@@ -178,7 +179,7 @@ namespace MagnumFoundation3D
             }
 
 
-            public bool SayDialogue(string eventName, List<s_factEntry> query)
+            public bool SayDialogue(string eventName, List<s_factEntry> query, bool isFollowUp = true)
             {
 
                 s_ruleEntry[] rules = m_rules[eventName];
@@ -236,6 +237,17 @@ namespace MagnumFoundation3D
                 }
                 else
                 {
+                    if (speechContext != null)
+                    {
+                        //Response is rejected because the speaker's response has a higher priority.
+                        if (!isFollowUp)
+                        {
+                            if (!speechContext.CanInterrupt(bestDialgoueRule.priority))
+                                return false;
+                            else
+                                speechContext.Dispose();
+                        }
+                    }
                     /*
                     if (S_SpeechContextHandler.instance.SpeechContextExists(speechID)) {
 
@@ -247,11 +259,17 @@ namespace MagnumFoundation3D
                         if (bestDialgoueRule.priority <= current_dialogue.priority)
                             return false;
                     }
+                    if(speechContext != null)
+                        speechContext.SetSpeaker(this);
                     current_dialogue = bestDialgoueRule;
                     StartCoroutine(DialogueBubble(bestDialgoueRule));
                 }
 
                 return true;
+            }
+
+            public void StopTalking() {
+                current_dialogue = null;
             }
 
             public IEnumerator DialogueBubble(s_ruleEntry dialogue) {
@@ -280,6 +298,8 @@ namespace MagnumFoundation3D
                 current_dialogue = null;
                 switch (dialogue.triggersObject) {
                     case "":
+                        if(speechContext != null)
+                            speechContext.Dispose();
                         break;
 
                     case "!self":

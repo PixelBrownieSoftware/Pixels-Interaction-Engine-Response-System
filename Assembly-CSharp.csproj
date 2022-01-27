@@ -61,6 +61,7 @@
     <Compile Include="Assets\s_diaEntry.cs" />
     <Compile Include="Assets\o_dialogueSpeaker.cs" />
     <Compile Include="Assets\s_ResponseCondCheck.cs" />
+    <Compile Include="Assets\O_SpeechContext.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

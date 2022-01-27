@@ -7,10 +7,6 @@ using MagnumFoundation3D.ResponseSystem;
 [System.Serializable]
 public class s_speechContext {
     public Guid ID = Guid.NewGuid();
-    public o_dialogueSpeaker speaker;
-    public o_dialogueSpeaker listener_1;
-    public o_dialogueSpeaker listener_2;
-    public o_dialogueSpeaker listener_3;
     public int priority;
 }
 
