@@ -10,12 +10,12 @@ Each character in a scene has a 'dialogue speaker' and a collection of facts and
 These are conditiions which contain a peice of dialouge. They are checked against facts and are picked out based on which facts meet the critiera. The rules with the most critiera are picked first. Rules are sorted out by a special fact named a 'Concept' which is basically an event.
 
 ### Facts/Context
-These are what are checked in the rules. They can be strings or numbers
-
-## Planned Features
+These are what are checked in the rules. They can be strings or numbers which are stored and changed by the rules.
 
 ### Speech context
 These are objects that track speakers and listeners. When an event is dispatched, speakers and listeners are added to this context. The purpose of this object is to avoid non-essential interruption to the listeners.
+
+## Planned Features
 
 ### Different types of events
 For now, this system only has dialogue. In the future I would like to expand this system to more than just dialogue i.e. movement, choices etc.
