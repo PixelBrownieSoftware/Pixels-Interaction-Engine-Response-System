@@ -2,7 +2,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-using MagnumFoundation3D.ResponseSystem;
 
 public class ed_fact : VisualElement
 {
@@ -11,9 +10,9 @@ public class ed_fact : VisualElement
     VisualElement m_criteriaList;
     VisualElement m_followbackQueryList;
     VisualElement m_modificationList;
-    ed_RespDataObj m_responseDataEditor;
+    ed_PIE m_responseDataEditor;
 
-    public ed_fact(ed_RespDataObj m_responseDataEditor, s_factEntry m_fact, s_RespDatabase m_respData)
+    public ed_fact(ed_PIE m_responseDataEditor, s_factEntry m_fact, s_RespDatabase m_respData)
     {
         this.m_fact = m_fact;
         this.m_respData = m_respData;

@@ -1,0 +1,2 @@
+C:\Users\hamza\Own Games\Unity\Test projects\Response system\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+C:\Users\hamza\Own Games\Unity\Test projects\Response system\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache

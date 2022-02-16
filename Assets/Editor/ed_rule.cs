@@ -2,7 +2,6 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using UnityEngine;
-using MagnumFoundation3D.ResponseSystem;
 
 public class ed_rule : VisualElement
 {
@@ -11,9 +10,9 @@ public class ed_rule : VisualElement
     VisualElement m_criteriaList;
     VisualElement m_followbackQueryList;
     VisualElement m_modificationList;
-    ed_RespDataObj m_responseDataEditor;
+    ed_PIE m_responseDataEditor;
 
-    public ed_rule(ed_RespDataObj m_responseDataEditor, s_ruleEntry m_rule, s_RespDatabase m_respData) {
+    public ed_rule(ed_PIE m_responseDataEditor, s_ruleEntry m_rule, s_RespDatabase m_respData) {
         this.m_rule = m_rule;
         this.m_respData = m_respData;
         this.m_responseDataEditor = m_responseDataEditor;

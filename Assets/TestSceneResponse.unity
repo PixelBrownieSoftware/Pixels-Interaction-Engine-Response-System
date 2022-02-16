@@ -3513,8 +3513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: onTalk
   characterName: Rebecca
-  participantNames:
-  - Ralph
+  participantNames: []
   speechContextPrefab: {fileID: 92035999360597415, guid: 9a7ee29a30048da4fafe935280ba601a, type: 3}
   prompts:
   - fact_name: prompt

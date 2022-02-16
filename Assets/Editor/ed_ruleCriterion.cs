@@ -2,8 +2,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-using MagnumFoundation3D.ResponseSystem;
-
 
 public class ed_ruleCriterion : VisualElement
 {

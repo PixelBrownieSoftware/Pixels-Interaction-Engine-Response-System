@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D197F992-BED5-3BD9-59A8-079B565BBF43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -55,25 +56,33 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\ed_RespModification.cs" />
     <Compile Include="Assets\Editor\ed_ruleCriterion.cs" />
+    <Compile Include="Assets\Editor\Test\test.cs" />
     <Compile Include="Assets\Editor\ed_RespDataObj.cs" />
     <Compile Include="Assets\Editor\ed_fact.cs" />
     <Compile Include="Assets\Editor\ed_RespFollowup.cs" />
     <Compile Include="Assets\Editor\ed_PIERS.cs" />
+    <Compile Include="Assets\Editor\ed_PIE.cs" />
     <Compile Include="Assets\Editor\ed_rule.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Editor\ed_RespFollowup.uss" />
-     <None Include="Assets\Editor\ed_RespDataObj.uss" />
-     <None Include="Assets\Editor\ed_fact.uxml" />
-     <None Include="Assets\Editor\ed_RespModification.uss" />
-     <None Include="Assets\Editor\ed_RespDataObj.uxml" />
-     <None Include="Assets\Editor\ed_ruleCriterion.uxml" />
-     <None Include="Assets\Editor\ed_ruleCriterion.uss" />
-     <None Include="Assets\Editor\ed_rule.uss" />
-     <None Include="Assets\Editor\ed_RespModification.uxml" />
-     <None Include="Assets\Editor\ed_RespFollowup.uxml" />
-     <None Include="Assets\Editor\ed_fact.uss" />
-     <None Include="Assets\Editor\ed_rule.uxml" />
+    <None Include="Assets\Editor\ed_RespFollowup.uss" />
+    <None Include="Assets\Editor\ed_RespDataObj.uss" />
+    <None Include="Assets\Editor\ed_fact.uxml" />
+    <None Include="Assets\Editor\Test\test.uss" />
+    <None Include="Assets\Editor\ed_RespModification.uss" />
+    <None Include="Assets\Editor\ed_RespDataObj.uxml" />
+    <None Include="Assets\Editor\ed_PIE.uss" />
+    <None Include="Assets\Editor\ed_ruleCriterion.uxml" />
+    <None Include="Assets\Editor\ed_PIE.uxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\Editor\ed_ruleCriterion.uss" />
+    <None Include="Assets\Editor\ed_rule.uss" />
+    <None Include="Assets\Editor\Test\test.uxml" />
+    <None Include="Assets\Editor\ed_RespModification.uxml" />
+    <None Include="Assets\Editor\ed_RespFollowup.uxml" />
+    <None Include="Assets\Editor\ed_fact.uss" />
+    <None Include="Assets\Editor\ed_rule.uxml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

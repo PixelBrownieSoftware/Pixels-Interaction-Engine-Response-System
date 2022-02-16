@@ -6,8 +6,12 @@
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
   <engine:VisualElement name ="Container">
-
     <engine:VisualElement name ="LeftPanel">
+      <engine:Label text="Database" class="Title"/>
+      <engine:ListView class="the-uxml-listview" name="responseCharacterDataList"/>
+    </engine:VisualElement>
+
+      <engine:VisualElement name ="LeftPanel">
       <engine:Label text="Rules" class="Title"/>
       <engine:Box>
         <engine:ListView class="the-uxml-listview" name="rulesList"/>
